@@ -162,7 +162,7 @@ Jetzt musst du dich entscheiden: Willst du noch tiefer ins Weltall fliegen oder 
         getText: () => `Du fliegst weiter ins dunkle Weltall! Vorbei an Schwarzen Löchern, Sternen und kosmischen Phänomenen.
 Es ist unglaublich schön und furchteinflößend zugleich. Plötzlich wirst du von einer unsichtbaren Kraft durchgerüttelt!
 Dein Bett schlingert wild herum! "Was ist das?!" schreist du. Die Welt dreht sich... und dann...
-Alles wird schwarz. Du wachst auf und merkst... es war ein Traum! Oder war es?`;
+Alles wird schwarz. Du wachst auf und merkst... es war ein Traum! Oder war es?`,
         choices: [
             { text: 'Das war ein Traum! Weitermakin zu Szene 12', nextScene: 12, action: null }
         ]
