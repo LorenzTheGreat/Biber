@@ -30,14 +30,12 @@ function getTitle() {
 
 // Scene Definitions
 const scenes = [
-    // Scene 0: Charakterisierung (wird von UI gehandhabt)
     {
         id: 0,
         title: 'Charakterisierung',
         text: 'Warte auf Charakterisierung...',
         choices: []
     },
-    // Scene 1: Aufwachen
     {
         id: 1,
         title: 'Aufwachen',
@@ -49,7 +47,6 @@ Es ist sehr merkwürdig. Ein Gefühl von Neugier überkommt dich...`,
             { text: 'Erst nochmal überlegen - das sieht verdächtig aus', nextScene: 1, action: 'reconsider' }
         ]
     },
-    // Scene 2: Schalter drücken
     {
         id: 2,
         title: 'Der Schalter',
@@ -61,7 +58,6 @@ Sofort ertönt ein lautes SUMMEN. Dein Bett beginnt zu vibrieren und elektrische
             { text: 'Versuchen, aus dem Bett zu springen', nextScene: 3, action: 'jump' }
         ]
     },
-    // Scene 3: Ins Weltall
     {
         id: 3,
         title: 'Der Flug beginnt',
@@ -74,7 +70,6 @@ Das Bett fliegt schneller und schneller auf den Mond zu...`,
             { text: 'Dich dem Schicksal ergeben und durchhalten', nextScene: 4, action: null }
         ]
     },
-    // Scene 4: Erste Weltraum-Gefahr
     {
         id: 4,
         title: 'Gefahr im All',
@@ -87,7 +82,6 @@ Du musst schnell ausweichen!`,
             { text: 'Geradeaus durchfahren', nextScene: 5, action: 'straight' }
         ]
     },
-    // Scene 5: Nähe zum Mond
     {
         id: 5,
         title: 'Mond in Sichtweite',
@@ -101,7 +95,6 @@ Sie sendet dir ein Signal. Eine Stimme ertönt: "Willkommen, Besucher! Du hast z
             { text: 'Weiterfliegen und ignorieren', nextScene: 7, action: 'ignore' }
         ]
     },
-    // Scene 6: Mit Außerirdischen sprechen
     {
         id: 6,
         title: 'Außerirdischer Kontakt',
@@ -114,7 +107,6 @@ Das ist eine schwere Entscheidung...`,
             { text: 'Nein danke! Ich zerstöre den Mond lieber', nextScene: 8, action: null }
         ]
     },
-    // Scene 7: Kein Signal heachten
     {
         id: 7,
         title: 'Mond-Kollisionskurs',
@@ -127,7 +119,6 @@ Der Schild hält gerade noch und dein Bett umrundet den Mond in einer großen Sc
             { text: 'Weiterfliegen ins Weltall', nextScene: 9, action: 'continue' }
         ]
     },
-    // Scene 8: Mond-Zerstörung
     {
         id: 8,
         title: 'Die Mond-Explosion',
@@ -139,7 +130,6 @@ Die Energie baut sich auf - das ist deine letzte Chance, die Art der Explosion z
             { text: 'LASER-EXPLOSION!', nextScene: 9, action: 'laser', setExplosion: 'laser' }
         ]
     },
-    // Scene 9: Nach der Mond-Explosion
     {
         id: 9,
         title: 'Mond zerstört!',
@@ -155,7 +145,6 @@ Jetzt musst du dich entscheiden: Willst du noch tiefer ins Weltall fliegen oder 
             { text: 'Zurück nach Hause! Mir reicht es!', nextScene: 11, action: 'home' }
         ]
     },
-    // Scene 10: Tieferes Weltall - Alternative Route
     {
         id: 10,
         title: 'Das tiefe Weltall',
@@ -164,10 +153,9 @@ Es ist unglaublich schön und furchteinflößend zugleich. Plötzlich wirst du v
 Dein Bett schlingert wild herum! "Was ist das?!" schreist du. Die Welt dreht sich... und dann...
 Alles wird schwarz. Du wachst auf und merkst... es war ein Traum! Oder war es?`,
         choices: [
-            { text: 'Das war ein Traum! Weitermakin zu Szene 12', nextScene: 12, action: null }
+            { text: 'Das war ein Traum! Weitermachen zu Szene 12', nextScene: 12, action: null }
         ]
     },
-    // Scene 11: Nach Hause zurück
     {
         id: 11,
         title: 'Heimkehr',
@@ -180,7 +168,6 @@ Dann schläfst du ein...`,
             { text: 'Weitergehen zu Szene 12', nextScene: 12, action: null }
         ]
     },
-    // Scene 12: Aufwachen und Realisation
     {
         id: 12,
         title: 'Die Rückkehr zur Realität',
@@ -194,7 +181,6 @@ Sie kommt die Treppe herauf...`,
             { text: 'Mutters Reaktion abwarten', nextScene: 13, action: null }
         ]
     },
-    // Scene 13: Finale
     {
         id: 13,
         title: 'Das Finale',
